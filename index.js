@@ -1,6 +1,4 @@
-module.exports = caesar;
-
-function caesar(input, shift) {
+module.exports.caesar = function(input, shift) {
     if (!/^([1-9]\d*|0)$/.test(shift)) {
         throw new Error('Shift must be a integer greater than or equal to 0.')
     }
