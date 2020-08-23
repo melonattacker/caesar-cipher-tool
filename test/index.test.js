@@ -37,6 +37,6 @@ test('caesar must return error when shift is not integer.', () => {
     try {
         caesar.caesar(input, shift);
     } catch(err) {
-        expect(err.message).toBe("Shift must be a integer greater than or equal to .");
+        expect(err.message).toBe("Shift must be a integer greater than or equal to 0.");
     }
 });
